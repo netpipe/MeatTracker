@@ -6,6 +6,7 @@
 #include <QDir>
 #include <QTimer>
 #include <QSound>
+#include <downloadmanager.h>
 
 QString mediadir = "./Resource/";
 
