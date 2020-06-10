@@ -71,7 +71,24 @@
       <string>WebStories</string>
      </attribute>
      <layout class="QGridLayout" name="gridLayout_2">
-      <item row="0" column="0">
+      <item row="2" column="0">
+       <widget class="QPushButton" name="webvoteup">
+        <property name="text">
+         <string>VoteUp</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QPushButton" name="webvotedown">
+        <property name="text">
+         <string>VoteDown</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" colspan="2">
+       <widget class="QTextEdit" name="textEdit_2"/>
+      </item>
+      <item row="0" column="0" colspan="2">
        <widget class="QTableWidget" name="tableWidget_2">
         <column>
          <property name="text">
@@ -95,37 +112,81 @@
         </column>
        </widget>
       </item>
-      <item row="1" column="0">
-       <widget class="QTextEdit" name="textEdit_2"/>
-      </item>
      </layout>
     </widget>
     <widget class="QWidget" name="tab_3">
      <attribute name="title">
       <string>Pictures</string>
      </attribute>
-     <layout class="QGridLayout" name="gridLayout_6">
-      <item row="0" column="0" colspan="3">
-       <widget class="QGraphicsView" name="graphicsView"/>
+     <layout class="QGridLayout" name="gridLayout_7">
+      <item row="1" column="0" colspan="2">
+       <widget class="QPushButton" name="pictureVoteUp">
+        <property name="text">
+         <string>VoteUp</string>
+        </property>
+       </widget>
       </item>
-      <item row="1" column="0">
-       <widget class="QPushButton" name="pushButton_5">
+      <item row="1" column="2">
+       <widget class="QPushButton" name="pictureVoteDown">
+        <property name="text">
+         <string>VoteDown</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QPushButton" name="pictureInspire">
         <property name="text">
          <string>Inspire</string>
         </property>
        </widget>
       </item>
-      <item row="1" column="1">
-       <widget class="QPushButton" name="pushButton_6">
+      <item row="2" column="1">
+       <widget class="QPushButton" name="pictureRandom">
         <property name="text">
          <string>Random</string>
         </property>
        </widget>
       </item>
-      <item row="1" column="2">
-       <widget class="QPushButton" name="pushButton_7">
+      <item row="2" column="2">
+       <widget class="QPushButton" name="pictureUpload">
         <property name="text">
          <string>Upload</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0" colspan="3">
+       <widget class="QGraphicsView" name="graphicsView"/>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="tab_9">
+     <attribute name="title">
+      <string>News</string>
+     </attribute>
+     <layout class="QGridLayout" name="gridLayout_10">
+      <item row="0" column="0">
+       <widget class="QTableWidget" name="tableWidget_5">
+        <column>
+         <property name="text">
+          <string>Date</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Title</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Entry</string>
+         </property>
+        </column>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QPushButton" name="pushButton">
+        <property name="text">
+         <string>PushButton</string>
         </property>
        </widget>
       </item>
@@ -138,8 +199,8 @@
      <widget class="QGraphicsView" name="graphicsView_5">
       <property name="geometry">
        <rect>
-        <x>20</x>
-        <y>10</y>
+        <x>110</x>
+        <y>20</y>
         <width>571</width>
         <height>341</height>
        </rect>
@@ -157,7 +218,7 @@
      </rect>
     </property>
     <property name="title">
-     <string>GroupBox</string>
+     <string>Ideas</string>
     </property>
     <layout class="QGridLayout" name="gridLayout_3">
      <item row="2" column="0">
@@ -168,7 +229,7 @@
       </widget>
      </item>
      <item row="5" column="1">
-      <widget class="QPushButton" name="pushButton_3">
+      <widget class="QPushButton" name="edit">
        <property name="text">
         <string>Edit</string>
        </property>
@@ -188,7 +249,7 @@
       </widget>
      </item>
      <item row="5" column="2">
-      <widget class="QPushButton" name="pushButton_4">
+      <widget class="QPushButton" name="publish">
        <property name="text">
         <string>Publish</string>
        </property>
@@ -202,7 +263,7 @@
       </widget>
      </item>
      <item row="5" column="0">
-      <widget class="QPushButton" name="pushButton_2">
+      <widget class="QPushButton" name="save">
        <property name="text">
         <string>Save</string>
        </property>
@@ -245,7 +306,7 @@
      </item>
     </layout>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="hadsome">
     <property name="geometry">
      <rect>
       <x>240</x>
@@ -281,6 +342,13 @@
      <height>24</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuMenu">
+    <property name="title">
+     <string>Menu</string>
+    </property>
+    <addaction name="actionExit"/>
+   </widget>
+   <addaction name="menuMenu"/>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
    <attribute name="toolBarArea">
@@ -291,6 +359,11 @@
    </attribute>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>
