@@ -49,7 +49,11 @@ MainWindow::MainWindow(QWidget *parent) :
  //   timerClock->start(1000);
 
 
-
+    //Apply style
+    QFile stylesheet("./Resource/themes/qdarkstyle/qdarkstyle.qss");
+    stylesheet.open(QFile::ReadOnly);
+    this->setStyleSheet(stylesheet.readAll());
+    stylesheet.close();
 
 }
 
