@@ -17,14 +17,14 @@
    <widget class="QTabWidget" name="tabWidget">
     <property name="geometry">
      <rect>
-      <x>370</x>
-      <y>0</y>
+      <x>390</x>
+      <y>10</y>
       <width>811</width>
       <height>601</height>
      </rect>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>5</number>
     </property>
     <widget class="QWidget" name="tab">
      <attribute name="title">
@@ -46,17 +46,7 @@
            </column>
            <column>
             <property name="text">
-             <string>New Column</string>
-            </property>
-           </column>
-           <column>
-            <property name="text">
-             <string>Saved</string>
-            </property>
-           </column>
-           <column>
-            <property name="text">
-             <string>Entry</string>
+             <string>meat used</string>
             </property>
            </column>
           </widget>
@@ -92,22 +82,17 @@
        <widget class="QTableWidget" name="tableWidget_2">
         <column>
          <property name="text">
-          <string>Date</string>
+          <string>Date Added</string>
          </property>
         </column>
         <column>
          <property name="text">
-          <string>New Column</string>
+          <string>author</string>
          </property>
         </column>
         <column>
          <property name="text">
-          <string>Saved</string>
-         </property>
-        </column>
-        <column>
-         <property name="text">
-          <string>Entry</string>
+          <string>votes</string>
          </property>
         </column>
        </widget>
@@ -186,7 +171,7 @@
       <item row="1" column="0">
        <widget class="QPushButton" name="pushButton">
         <property name="text">
-         <string>PushButton</string>
+         <string>update</string>
         </property>
        </widget>
       </item>
@@ -196,14 +181,133 @@
      <attribute name="title">
       <string>About</string>
      </attribute>
-     <widget class="QGraphicsView" name="graphicsView_5">
+     <widget class="QLabel" name="label_6">
       <property name="geometry">
        <rect>
-        <x>110</x>
-        <y>20</y>
-        <width>571</width>
+        <x>90</x>
+        <y>100</y>
+        <width>581</width>
         <height>341</height>
        </rect>
+      </property>
+      <property name="text">
+       <string>i can do ths page later its an app about sharing ideas about curbing meat consumption using recipes and pictures about other food ideas</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_4">
+     <attribute name="title">
+      <string>Settings / stats</string>
+     </attribute>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>50</y>
+        <width>58</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>skipped</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>130</y>
+        <width>101</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>timer duration</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>190</y>
+        <width>91</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>serving size</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_5">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>190</y>
+        <width>113</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_6">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>130</y>
+        <width>113</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>50</y>
+        <width>58</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>times</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>330</y>
+        <width>88</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>save</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>70</y>
+        <width>91</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>ammount</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>200</y>
+        <width>58</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>lbs</string>
       </property>
      </widget>
     </widget>
@@ -212,9 +316,9 @@
     <property name="geometry">
      <rect>
       <x>9</x>
-      <y>74</y>
+      <y>114</y>
       <width>361</width>
-      <height>531</height>
+      <height>491</height>
      </rect>
     </property>
     <property name="title">
@@ -297,7 +401,7 @@
      <item>
       <widget class="QLabel" name="label_2">
        <property name="text">
-        <string>Estimated Time for Meeting</string>
+        <string>Estimated Time for Meating</string>
        </property>
       </widget>
      </item>
