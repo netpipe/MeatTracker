@@ -19,7 +19,7 @@ splash.show();
 
 splash.finish(&w);
 
-    w.setWindowFlags( Qt::Dialog  | Qt::MSWindowsFixedSizeDialogHint | Qt::WindowStaysOnTopHint);
+    w.setWindowFlags( Qt::Dialog  | Qt::MSWindowsFixedSizeDialogHint);
 
     w.show();
 

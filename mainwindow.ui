@@ -6,443 +6,652 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1195</width>
-    <height>667</height>
+    <width>1434</width>
+    <height>867</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QTabWidget" name="tabWidget">
-    <property name="geometry">
-     <rect>
-      <x>390</x>
-      <y>10</y>
-      <width>811</width>
-      <height>601</height>
-     </rect>
-    </property>
-    <property name="currentIndex">
-     <number>5</number>
-    </property>
-    <widget class="QWidget" name="tab">
-     <attribute name="title">
-      <string>Your Log</string>
-     </attribute>
-     <layout class="QGridLayout" name="gridLayout">
-      <item row="0" column="0">
-       <widget class="QGroupBox" name="groupBox">
-        <property name="title">
-         <string>Your Entry's</string>
-        </property>
-        <layout class="QGridLayout" name="gridLayout_8">
-         <item row="0" column="0">
-          <widget class="QTableWidget" name="tableWidget">
-           <column>
-            <property name="text">
-             <string>Date</string>
+   <layout class="QHBoxLayout" name="horizontalLayout_4">
+    <item>
+     <widget class="QWidget" name="widget" native="true">
+      <property name="maximumSize">
+       <size>
+        <width>450</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <property name="spacing">
+        <number>2</number>
+       </property>
+       <property name="leftMargin">
+        <number>2</number>
+       </property>
+       <property name="topMargin">
+        <number>2</number>
+       </property>
+       <property name="rightMargin">
+        <number>2</number>
+       </property>
+       <property name="bottomMargin">
+        <number>2</number>
+       </property>
+       <item>
+        <widget class="QWidget" name="widget_2" native="true">
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout">
+            <item>
+             <widget class="QLabel" name="label_2">
+              <property name="text">
+               <string>Estimated Time for Meating</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLCDNumber" name="lcdNumber"/>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QProgressBar" name="progressBar">
+            <property name="value">
+             <number>24</number>
             </property>
-           </column>
-           <column>
-            <property name="text">
-             <string>meat used</string>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="widget_3" native="true">
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
             </property>
-           </column>
-          </widget>
-         </item>
-        </layout>
-       </widget>
-      </item>
-     </layout>
-    </widget>
-    <widget class="QWidget" name="tab_2">
-     <attribute name="title">
-      <string>WebStories</string>
-     </attribute>
-     <layout class="QGridLayout" name="gridLayout_2">
-      <item row="2" column="0">
-       <widget class="QPushButton" name="webvoteup">
-        <property name="text">
-         <string>VoteUp</string>
-        </property>
-       </widget>
-      </item>
-      <item row="2" column="1">
-       <widget class="QPushButton" name="webvotedown">
-        <property name="text">
-         <string>VoteDown</string>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="0" colspan="2">
-       <widget class="QTextEdit" name="textEdit_2"/>
-      </item>
-      <item row="0" column="0" colspan="2">
-       <widget class="QTableWidget" name="tableWidget_2">
-        <column>
-         <property name="text">
-          <string>Date Added</string>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>310</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="hadsome">
+            <property name="text">
+             <string>HadSome Button</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_2">
+         <property name="title">
+          <string>Ideas</string>
          </property>
-        </column>
-        <column>
-         <property name="text">
-          <string>author</string>
-         </property>
-        </column>
-        <column>
-         <property name="text">
-          <string>votes</string>
-         </property>
-        </column>
-       </widget>
-      </item>
-     </layout>
-    </widget>
-    <widget class="QWidget" name="tab_3">
-     <attribute name="title">
-      <string>Pictures</string>
-     </attribute>
-     <layout class="QGridLayout" name="gridLayout_7">
-      <item row="1" column="0" colspan="2">
-       <widget class="QPushButton" name="pictureVoteUp">
-        <property name="text">
-         <string>VoteUp</string>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="2">
-       <widget class="QPushButton" name="pictureVoteDown">
-        <property name="text">
-         <string>VoteDown</string>
-        </property>
-       </widget>
-      </item>
-      <item row="2" column="0">
-       <widget class="QPushButton" name="pictureInspire">
-        <property name="text">
-         <string>Inspire</string>
-        </property>
-       </widget>
-      </item>
-      <item row="2" column="1">
-       <widget class="QPushButton" name="pictureRandom">
-        <property name="text">
-         <string>Random</string>
-        </property>
-       </widget>
-      </item>
-      <item row="2" column="2">
-       <widget class="QPushButton" name="pictureUpload">
-        <property name="text">
-         <string>Upload</string>
-        </property>
-       </widget>
-      </item>
-      <item row="0" column="0" colspan="3">
-       <widget class="QGraphicsView" name="graphicsView"/>
-      </item>
-     </layout>
-    </widget>
-    <widget class="QWidget" name="tab_9">
-     <attribute name="title">
-      <string>News</string>
-     </attribute>
-     <layout class="QGridLayout" name="gridLayout_10">
-      <item row="0" column="0">
-       <widget class="QTableWidget" name="tableWidget_5">
-        <column>
-         <property name="text">
-          <string>Date</string>
-         </property>
-        </column>
-        <column>
-         <property name="text">
-          <string>Title</string>
-         </property>
-        </column>
-        <column>
-         <property name="text">
-          <string>Entry</string>
-         </property>
-        </column>
-       </widget>
-      </item>
-      <item row="1" column="0">
-       <widget class="QPushButton" name="pushButton">
-        <property name="text">
-         <string>update</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </widget>
-    <widget class="QWidget" name="tab_7">
-     <attribute name="title">
-      <string>About</string>
-     </attribute>
-     <widget class="QLabel" name="label_6">
-      <property name="geometry">
-       <rect>
-        <x>90</x>
-        <y>100</y>
-        <width>581</width>
-        <height>341</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>i can do ths page later its an app about sharing ideas about curbing meat consumption using recipes and pictures about other food ideas</string>
-      </property>
+         <layout class="QGridLayout" name="gridLayout_3">
+          <item row="5" column="1">
+           <widget class="QPushButton" name="edit">
+            <property name="text">
+             <string>Edit</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0" colspan="4">
+           <widget class="QTextEdit" name="txt_idea"/>
+          </item>
+          <item row="1" column="0" colspan="2">
+           <widget class="QLabel" name="label_4">
+            <property name="text">
+             <string>Estimated Animals Saved</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="3">
+           <widget class="QLineEdit" name="txt_animal"/>
+          </item>
+          <item row="0" column="3">
+           <widget class="QLineEdit" name="txt_people"/>
+          </item>
+          <item row="2" column="1" colspan="3">
+           <widget class="QLineEdit" name="txt_title"/>
+          </item>
+          <item row="5" column="0">
+           <widget class="QPushButton" name="save">
+            <property name="text">
+             <string>Save</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="label">
+            <property name="text">
+             <string>Title</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0" colspan="2">
+           <widget class="QLabel" name="label_3">
+            <property name="text">
+             <string>Estimated People Saved</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0" colspan="2">
+           <widget class="QLabel" name="label_5">
+            <property name="text">
+             <string>Notes On Idea</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="3">
+           <widget class="QPushButton" name="publish">
+            <property name="text">
+             <string>Publish</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
      </widget>
-    </widget>
-    <widget class="QWidget" name="tab_4">
-     <attribute name="title">
-      <string>Settings / stats</string>
-     </attribute>
-     <widget class="QLabel" name="label_7">
-      <property name="geometry">
-       <rect>
-        <x>40</x>
-        <y>50</y>
-        <width>58</width>
-        <height>18</height>
-       </rect>
+    </item>
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
       </property>
-      <property name="text">
-       <string>skipped</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_10">
-      <property name="geometry">
-       <rect>
-        <x>40</x>
-        <y>130</y>
-        <width>101</width>
-        <height>18</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>timer duration</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_9">
-      <property name="geometry">
-       <rect>
-        <x>50</x>
-        <y>190</y>
-        <width>91</width>
-        <height>18</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>serving size</string>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="lineEdit_5">
-      <property name="geometry">
-       <rect>
-        <x>150</x>
-        <y>190</y>
-        <width>113</width>
-        <height>30</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="lineEdit_6">
-      <property name="geometry">
-       <rect>
-        <x>150</x>
-        <y>130</y>
-        <width>113</width>
-        <height>30</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_8">
-      <property name="geometry">
-       <rect>
-        <x>150</x>
-        <y>50</y>
-        <width>58</width>
-        <height>18</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>times</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pushButton_2">
-      <property name="geometry">
-       <rect>
-        <x>130</x>
-        <y>330</y>
-        <width>88</width>
-        <height>28</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>save</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_11">
-      <property name="geometry">
-       <rect>
-        <x>150</x>
-        <y>70</y>
-        <width>91</width>
-        <height>18</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>ammount</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_12">
-      <property name="geometry">
-       <rect>
-        <x>280</x>
-        <y>200</y>
-        <width>58</width>
-        <height>18</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>lbs</string>
-      </property>
-     </widget>
-    </widget>
-   </widget>
-   <widget class="QGroupBox" name="groupBox_2">
-    <property name="geometry">
-     <rect>
-      <x>9</x>
-      <y>114</y>
-      <width>361</width>
-      <height>491</height>
-     </rect>
-    </property>
-    <property name="title">
-     <string>Ideas</string>
-    </property>
-    <layout class="QGridLayout" name="gridLayout_3">
-     <item row="2" column="0">
-      <widget class="QLabel" name="label">
-       <property name="text">
-        <string>Title</string>
-       </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>Your Log</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="0" column="0">
+         <widget class="QGroupBox" name="groupBox">
+          <property name="title">
+           <string>Your Entry's</string>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_5">
+           <item>
+            <widget class="QTableWidget" name="tbl_meat">
+             <column>
+              <property name="text">
+               <string>Date</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>meat used</string>
+              </property>
+             </column>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
       </widget>
-     </item>
-     <item row="5" column="1">
-      <widget class="QPushButton" name="edit">
-       <property name="text">
-        <string>Edit</string>
-       </property>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>WebStories</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QTableWidget" name="tbl_story">
+          <property name="selectionMode">
+           <enum>QAbstractItemView::ExtendedSelection</enum>
+          </property>
+          <property name="selectionBehavior">
+           <enum>QAbstractItemView::SelectRows</enum>
+          </property>
+          <column>
+           <property name="text">
+            <string>Date Added</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>author</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>votes</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTextEdit" name="txt_storyidea"/>
+        </item>
+        <item>
+         <widget class="QPushButton" name="webvotedown">
+          <property name="text">
+           <string>VoteDown</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="webvoteup">
+          <property name="text">
+           <string>VoteUp</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
       </widget>
-     </item>
-     <item row="4" column="0" colspan="3">
-      <widget class="QTextEdit" name="textEdit"/>
-     </item>
-     <item row="2" column="1" colspan="2">
-      <widget class="QLineEdit" name="lineEdit"/>
-     </item>
-     <item row="3" column="0" colspan="2">
-      <widget class="QLabel" name="label_5">
-       <property name="text">
-        <string>Notes On Idea</string>
-       </property>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>Pictures</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_7">
+        <item row="5" column="0">
+         <widget class="QPushButton" name="pictureInspire">
+          <property name="text">
+           <string>Inspire</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QPushButton" name="pictureVoteDown">
+          <property name="text">
+           <string>VoteDown</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0" colspan="3">
+         <widget class="QTableWidget" name="tbl_pic">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>300</height>
+           </size>
+          </property>
+          <property name="editTriggers">
+           <set>QAbstractItemView::NoEditTriggers</set>
+          </property>
+          <property name="selectionBehavior">
+           <enum>QAbstractItemView::SelectRows</enum>
+          </property>
+          <column>
+           <property name="text">
+            <string>No</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Picture URL</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>DateTime</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+        <item row="2" column="0" colspan="2">
+         <widget class="QPushButton" name="pictureVoteUp">
+          <property name="text">
+           <string>VoteUp</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="2">
+         <widget class="QPushButton" name="pictureUpload">
+          <property name="text">
+           <string>Upload</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="1">
+         <widget class="QPushButton" name="pictureRandom">
+          <property name="text">
+           <string>Random</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0" colspan="3">
+         <widget class="QWidget" name="widget_8" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_12">
+           <item>
+            <spacer name="horizontalSpacer_10">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QLabel" name="lbl_pic">
+             <property name="minimumSize">
+              <size>
+               <width>500</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_11">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
       </widget>
-     </item>
-     <item row="5" column="2">
-      <widget class="QPushButton" name="publish">
-       <property name="text">
-        <string>Publish</string>
-       </property>
+      <widget class="QWidget" name="tab_9">
+       <attribute name="title">
+        <string>News</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_10">
+        <item row="2" column="0">
+         <widget class="QPushButton" name="pushButton">
+          <property name="text">
+           <string>update</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QTableWidget" name="tableWidget_5">
+          <column>
+           <property name="text">
+            <string>Date</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Title</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Entry</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+       </layout>
       </widget>
-     </item>
-     <item row="1" column="0" colspan="2">
-      <widget class="QLabel" name="label_4">
-       <property name="text">
-        <string>Estimated Animals Saved</string>
-       </property>
+      <widget class="QWidget" name="tab_7">
+       <attribute name="title">
+        <string>About</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <widget class="QLabel" name="label_6">
+          <property name="text">
+           <string>i can do ths page later its an app about sharing ideas about curbing meat consumption using 
+recipes and pictures about other food ideas</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
       </widget>
-     </item>
-     <item row="5" column="0">
-      <widget class="QPushButton" name="save">
-       <property name="text">
-        <string>Save</string>
-       </property>
+      <widget class="QWidget" name="tab_4">
+       <attribute name="title">
+        <string>Settings / stats</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_4" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_6">
+           <item>
+            <spacer name="horizontalSpacer_2">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_7">
+             <property name="text">
+              <string>skipped</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_10">
+             <property name="leftMargin">
+              <number>41</number>
+             </property>
+            </layout>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_8">
+             <property name="text">
+              <string>times
+ammount</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_3">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_5" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_7">
+           <item>
+            <spacer name="horizontalSpacer_4">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_10">
+             <property name="text">
+              <string>timer duration</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lineEdit_6"/>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_5">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_6" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_8">
+           <item>
+            <spacer name="horizontalSpacer_6">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_9">
+             <property name="text">
+              <string>serving size</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_11">
+             <property name="leftMargin">
+              <number>4</number>
+             </property>
+            </layout>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lineEdit_5"/>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_12">
+             <property name="text">
+              <string>lbs</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_7">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_7" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_9">
+           <item>
+            <spacer name="horizontalSpacer_8">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_2">
+             <property name="text">
+              <string>save</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_9">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
       </widget>
-     </item>
-     <item row="1" column="2">
-      <widget class="QLineEdit" name="lineEdit_4"/>
-     </item>
-     <item row="0" column="2">
-      <widget class="QLineEdit" name="lineEdit_3"/>
-     </item>
-     <item row="0" column="0" colspan="2">
-      <widget class="QLabel" name="label_3">
-       <property name="text">
-        <string>Estimated People Saved</string>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
-   <widget class="QWidget" name="horizontalLayoutWidget">
-    <property name="geometry">
-     <rect>
-      <x>9</x>
-      <y>9</y>
-      <width>242</width>
-      <height>25</height>
-     </rect>
-    </property>
-    <layout class="QHBoxLayout" name="horizontalLayout">
-     <item>
-      <widget class="QLabel" name="label_2">
-       <property name="text">
-        <string>Estimated Time for Meating</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QLCDNumber" name="lcdNumber"/>
-     </item>
-    </layout>
-   </widget>
-   <widget class="QPushButton" name="hadsome">
-    <property name="geometry">
-     <rect>
-      <x>240</x>
-      <y>40</y>
-      <width>121</width>
-      <height>28</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>HadSome Button</string>
-    </property>
-   </widget>
-   <widget class="QProgressBar" name="progressBar">
-    <property name="geometry">
-     <rect>
-      <x>270</x>
-      <y>10</y>
-      <width>91</width>
-      <height>26</height>
-     </rect>
-    </property>
-    <property name="value">
-     <number>24</number>
-    </property>
-   </widget>
+     </widget>
+    </item>
+   </layout>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1195</width>
+     <width>1434</width>
      <height>24</height>
     </rect>
    </property>
