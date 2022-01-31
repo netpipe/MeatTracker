@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include "mainwindow.h"
 #include <QApplication>
 #include <QSplashScreen>
@@ -40,3 +41,32 @@ int main(int argc, char *argv[])
 
     return a.exec();
 }
+=======
+#include "mainwindow.h"
+#include <QApplication>
+#include <QSplashScreen>
+
+QString mediadir2 = "./Resource/";
+int main(int argc, char *argv[])
+{
+    QApplication a(argc, argv);
+    a.setWindowIcon(QIcon(mediadir2 + "meatTracker.png"));
+    a.setQuitOnLastWindowClosed(false);
+
+    QPixmap m(mediadir2 + "meatTracker.png");
+
+
+MainWindow w;
+
+QSplashScreen splash(m);
+splash.show();
+
+splash.finish(&w);
+
+    w.setWindowFlags( Qt::Dialog  | Qt::MSWindowsFixedSizeDialogHint);
+
+    w.show();
+
+    return a.exec();
+}
+>>>>>>> 9ce67c128e8c3ff7d12130f682f8558591c33897
