@@ -4,6 +4,9 @@
 #include <QMainWindow>
 #include <QSystemTrayIcon>
 #include <QSqlDatabase>
+#include <QTableWidgetItem>
+#include <QMenu>
+
 namespace Ui {
 class MainWindow;
 }
@@ -11,8 +14,6 @@ class MainWindow;
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
-
-
     void createNewsTable();
     void SaveSettings();
     void loadSettings();
@@ -23,15 +24,37 @@ public:
     explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+protected:
+    void closeEvent(QCloseEvent *event) override;
+
+private:
+    void createActions();
+    void createTrayIcon();
+    void setTrayIcon();
+
 private slots:
     void on_actionExit_triggered();
-
     void on_exit();
+    void on_save_clicked();
+    void initStoryTable();
+    void initPictureTable();
+    void on_tbl_story_cellClicked(int row, int column);
+    void on_edit_clicked();
+    void on_pictureUpload_clicked();
+    void on_tbl_pic_itemSelectionChanged();
+
+    void on_pictureVoteUp_clicked();
+
+    void on_pictureVoteDown_clicked();
+
 private:
+    QSqlDatabase db;
+    Ui::MainWindow *ui;
+
     QSystemTrayIcon *trayIcon;
     QMenu *trayIconMenu;
-        QSqlDatabase db;
-    Ui::MainWindow *ui;
+
+    QAction *quitAction;
 };
 
 #endif // MAINWINDOW_H

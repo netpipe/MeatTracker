@@ -166,9 +166,9 @@ int DownloadManager::Upload(QString URL,QString User,QString Password,QString po
 
     QNetworkRequest request(url );
   //  QNetworkReply* reply = accessManager->put(request, byte_file);
-accessManager->put(request, byte_file);
+    accessManager->put(request, byte_file);
 
-
+    return 0;
 }
 #endif
 

@@ -1,27 +1,42 @@
 #include "mainwindow.h"
 #include <QApplication>
 #include <QSplashScreen>
+#include <QThread>
+#include <QFile>
+#include <QMessageBox>
 
 QString mediadir2 = "./Resource/";
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    a.setWindowIcon(QIcon(mediadir2 + "meatTracker.png"));
-    a.setQuitOnLastWindowClosed(false);
 
-    QPixmap m(mediadir2 + "meatTracker.png");
+    QFile styleFile(":/Resource/themes/qdarkstyle/qdarkstyle.qss");
+    styleFile.open(QFile::ReadOnly);
+    QString styleSheet = QLatin1String(styleFile.readAll());
+    a.setStyleSheet(styleSheet);
 
+    QSplashScreen *splash = new QSplashScreen;
+    splash->setPixmap(QPixmap(":/Resource/meatTracker.png"));
+    splash->show();
 
-MainWindow w;
+    if (!QSystemTrayIcon::isSystemTrayAvailable()) {
+        QMessageBox::critical(nullptr, QObject::tr("Systray"),
+                              QObject::tr("I couldn't detect any system tray "
+                                          "on this system."));
+        return 1;
+    }
+    QApplication::setQuitOnLastWindowClosed(false);
 
-QSplashScreen splash(m);
-splash.show();
+    MainWindow w;
 
-splash.finish(&w);
+    QThread::msleep(1000);
 
-    w.setWindowFlags( Qt::Dialog  | Qt::MSWindowsFixedSizeDialogHint | Qt::WindowStaysOnTopHint);
+    w.setWindowFlags( Qt::Dialog  | Qt::MSWindowsFixedSizeDialogHint);
 
     w.show();
+
+    splash->finish(&w);
+    delete splash;
 
     return a.exec();
 }
